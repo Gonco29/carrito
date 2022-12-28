@@ -1,0 +1,12 @@
+<h1>Todos los Productos</h1>
+
+<ul>
+  <% @products.each do |product| %>
+    <li>
+      <%= product.name %>
+      <br>
+      <%= product.price %>
+      <%= button_to "Agregar al Carrito" %>
+    </li>
+  <% end %>
+</ul>
