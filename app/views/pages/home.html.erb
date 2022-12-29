@@ -1,0 +1,12 @@
+<h1>Bienvenidos la GonchiTienda Online</h1>
+
+<ul>
+  <% @products.take(4).each do |product| %>
+    <li>
+      <%= product.name %>
+      <br>
+      <%= product.price %>
+      <%= button_to "Agregar al Carrito" %>
+    </li>
+  <% end %>
+</ul>
