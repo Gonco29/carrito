@@ -6,7 +6,7 @@
       <%= product.name %>
       <br>
       <%= product.price %>
-      <%= button_to "Agregar al Carrito" %>
+      <%= button_to "Agregar al Carrito", line_items_path(product_id: product.id) %>
     </li>
   <% end %>
 </ul>

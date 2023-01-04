@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   resources :products
   root to: "pages#home"
+
+  resources :line_items, only: %i[create]
 end
